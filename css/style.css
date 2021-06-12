@@ -1,0 +1,212 @@
+body {
+    background-color: rgb(240, 240, 240);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+    margin: 0px;
+}
+
+.fondo {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(150, 150, 150));
+}
+
+@keyframes logo {
+    0% {
+        width: 350px;
+    }
+    50% {
+        width: 325px;
+    }
+    100% {
+        width: 350px;
+    }
+}
+ 
+.logo {
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+}
+
+iframe {
+    width: 100%;
+    height: 170px;
+    display: block;
+}
+
+.iframe {
+    background-color: rgb(150, 150, 150, 0.250);
+}
+
+.cabeza {
+    height: 187px !important;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+@media (max-width: 527px) {
+    .cabeza {
+        height: 210px !important;
+    };
+}
+
+.cabezaSmall {
+    display: none;
+}
+
+@media (max-width: 527px) {
+    .cabezaSmall {
+        display: block;
+    }
+}
+
+.menu {
+    height: 210px !important;
+    padding-top: 165px;
+}
+
+@media (max-width: 527px) {
+    .menu {
+        display: none;
+    }
+}
+
+.menuIframe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.principal {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:    "producto1 producto2 producto3" 
+                            "producto4 producto5 producto6";
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+@media (max-width: 527px) {
+    .principal {
+        grid-template-areas:    "producto1"
+                                "producto2"
+                                "producto3"
+                                "producto4"
+                                "producto5"
+                                "producto6";
+        grid-template-columns: 300px;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    }
+}
+
+@media (min-width: 527px) and (max-width: 1024px) {
+    .principal {
+        grid-template-areas:    "producto1 producto2"
+                                "producto3 producto4"
+                                "producto5 producto6";
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 300px 300px;
+    }
+}
+
+.checkout {
+    height: 210px !important;
+}
+
+.pie {
+    text-align: center;
+    background-color: rgb(150, 150, 150, 0.250);
+    background-image: url("../images/logo.png");
+    background-size: contain;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    border: 5px solid rgb(150, 150, 150, 0.250);
+    padding: 5px;
+}
+
+@media (max-width: 527px) {
+    .center {
+        margin-top: 210px;
+    }
+}
+
+.twocolumns {
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 5px solid rgb(150, 150, 150, 0.250);
+}
+
+.aboutus {
+    text-align: center;
+    line-height: 250%;
+}
+
+.noUnderline {
+    text-decoration: none;
+}
+
+h3 {
+    column-span: all;
+}
+
+button, .form {
+    border-radius:10px;
+    outline:none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+.buttonMenu {
+    padding: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 527px) and (max-width: 1024px) {
+    .buttonMenu {
+        padding: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+.buttonMenu:hover {
+    border: 2px dashed black;
+    border-radius: 5px;
+}
+
+.whatsapp {
+    display: inline-block;
+    position: fixed;
+    bottom: 0px;
+    z-index: 9999999;
+    right: 0px;
+    left: auto;
+}
+
+@media (max-width: 527px) {
+    .whatsapp {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (min-width: 527px) and (max-width: 1024px) {
+    .whatsapp {
+        height: 75px;
+        width: 75px;
+    }
+}

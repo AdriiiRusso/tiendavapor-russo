@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda Vapor - FAQs</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <iframe src="./header.html" frameborder="0" class="cabeza"></iframe>
+    <div class="center" style='margin-top: 195px !important;'>
+        <div class="twocolumns">
+            <h3>Ayuda</h3>
+            <p>FAQ 1</p>
+            <p>FAQ 2</p>
+            <p>FAQ 3</p>
+            <p>FAQ 4</p>
+            <p>FAQ ...</p>
+            <p>FAQ N</p>
+        </div>
+        <h4>En caso de no encontrar lo necesitado, contactese con nosotros:</h4>
+        <form action="help.html">
+            <select name="type" class="form" required>
+                <option disabled selected>Elija un motivo de contacto</option>
+                <option value="1">Consulta administrativa</option>
+                <option value="2">Consulta técnica</option>
+                <option value="3">Otro</option>
+            </select>
+            <br><br>
+            <label>Mail de contacto</label>
+            <input type="email" placeholder="Introducir mail" class="form" required>
+            <br><br>
+            <label>Detalle</label>
+            <br><br>
+            <textarea name="detail" cols="30" rows="5" placeholder="Introducir detalle del contacto" class="form" required></textarea>
+            <br><br>
+            <label>¿Desea recibir novedades de Tienda Vapor?</label>
+            <input type="checkbox" name="newsletter">
+            <br><br>
+            <input type="submit" value="Enviar formulario" class="form">
+            <input type="reset" value="Restablecer formulario" class="form">
+        </form>
+    </div>
+    <br>
+    <iframe src="./footer.html" frameborder="0"></iframe>
+    <a href="http://example.com"><img src="./images/wpp.png" width="100" height="100" class="whatsapp"></a>
+</body>
+</html>
