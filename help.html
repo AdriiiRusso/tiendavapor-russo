@@ -1,19 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tienda Vapor - FAQs</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Vapor - Ayuda</title>
+    <!-- Bootstrap v5.0.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Fuente Ubuntu -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
 <body>
-    <iframe src="./header.html" frameborder="0" class="cabeza"></iframe>
-    <div class="center" style='margin-top: 195px !important;'>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light cabeza">
+        <div class="container-fluid">
+            <div class="logoContainer">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="" width="300" height="90" class="logo">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuario</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">Panel de control</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Cerrar sesión</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><b>Administración</b></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Carrito de compras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./help.html">Ayuda</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                </form>
+          </div>
+        </div>
+    </nav>
+    <div style="height: 75px;"></div>
+    <!-- FIN Navbar -->
+    </br>
+    <!-- Help -->
+    <div class="center">
         <div class="twocolumns">
-            <h3>Ayuda</h3>
+            <h3 class="titulo"><b>Ayuda</b></h3>
             <p>FAQ 1</p>
             <p>FAQ 2</p>
             <p>FAQ 3</p>
@@ -21,7 +76,8 @@
             <p>FAQ ...</p>
             <p>FAQ N</p>
         </div>
-        <h4>En caso de no encontrar lo necesitado, contactese con nosotros:</h4>
+        </br>
+        <h4><b>En caso de no encontrar lo necesitado, contactese con nosotros:</b></h4>
         <form action="help.html">
             <select name="type" class="form" required>
                 <option disabled selected>Elija un motivo de contacto</option>
@@ -29,23 +85,39 @@
                 <option value="2">Consulta técnica</option>
                 <option value="3">Otro</option>
             </select>
-            <br><br>
-            <label>Mail de contacto</label>
+            </br></br>
+            <label><b>Mail de contacto</b></label>
             <input type="email" placeholder="Introducir mail" class="form" required>
-            <br><br>
-            <label>Detalle</label>
-            <br><br>
-            <textarea name="detail" cols="30" rows="5" placeholder="Introducir detalle del contacto" class="form" required></textarea>
-            <br><br>
-            <label>¿Desea recibir novedades de Tienda Vapor?</label>
+            </br></br>
+            <label><b>Detalle</b></label>
+            </br>
+            <textarea name="detail" cols="50" rows="5" placeholder="Introducir detalle del contacto" class="form" required></textarea>
+            </br>
+            <label><b>¿Desea recibir novedades de Tienda Vapor?</b></label>
             <input type="checkbox" name="newsletter">
-            <br><br>
+            </br></br>
             <input type="submit" value="Enviar formulario" class="form">
             <input type="reset" value="Restablecer formulario" class="form">
         </form>
+        </br>
     </div>
-    <br>
-    <iframe src="./footer.html" frameborder="0"></iframe>
-    <a href="http://example.com"><img src="./images/wpp.png" width="100" height="100" class="whatsapp"></a>
+    <!-- FIN Help -->
+    </br>
+    <!-- Footer -->
+    <footer class="fondo">
+        <div class="pie"></br></div>
+            <p style="font-weight: bold; text-align: center; padding-top: 15px;">Tienda Vapor - Adrián Russo 2021
+                    ><a href="./aboutus.html" target="_parent" class="link">Acerca de nosotros</a>
+                    ><a href="./index.html" target="_parent" class="link">Instagram</a>
+                    ><a href="./index.html" target="_parent" class="link">Facebook</a>
+            </p>
+        <div class="pie"></br></div>
+    </footer>
+    <!-- FIN Footer-->
+    <!-- Whatsapp-->
+    <a href="#">
+        <img src="./images/wpp.png" width="100" height="100" class="whatsapp">
+    </a>
+    <!-- FIN Whatsapp-->
 </body>
 </html>

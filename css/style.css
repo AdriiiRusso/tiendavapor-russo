@@ -5,10 +5,6 @@ body {
     margin: 0px;
 }
 
-.fondo {
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(150, 150, 150));
-}
-
 @keyframes logo {
     0% {
         width: 350px;
@@ -28,44 +24,32 @@ body {
     animation-duration: 3s;
 }
 
-iframe {
-    width: 100%;
-    height: 170px;
-    display: block;
+.logoContainer {
+    width: 350px;
 }
 
-.iframe {
+.fondo {
     background-color: rgb(150, 150, 150, 0.250);
 }
 
+.titulo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
 .cabeza {
-    height: 187px !important;
-    display: block;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(150, 150, 150));
     position: fixed;
-    left: 0;
-    top: 0;
+    height: 75px;
     width: 100%;
+    z-index: 9999999;
 }
 
 @media (max-width: 527px) {
     .cabeza {
-        height: 210px !important;
-    };
-}
-
-.cabezaSmall {
-    display: none;
-}
-
-@media (max-width: 527px) {
-    .cabezaSmall {
-        display: block;
+        height: 225px;
     }
-}
-
-.menu {
-    height: 210px !important;
-    padding-top: 165px;
 }
 
 @media (max-width: 527px) {
@@ -74,7 +58,7 @@ iframe {
     }
 }
 
-.menuIframe {
+.menuInside {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -114,8 +98,11 @@ iframe {
     }
 }
 
-.checkout {
-    height: 210px !important;
+.carrito {
+    text-align: center;
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .pie {
@@ -135,7 +122,7 @@ iframe {
 
 @media (max-width: 527px) {
     .center {
-        margin-top: 210px;
+        margin-top: 125px;
     }
 }
 
@@ -145,12 +132,7 @@ iframe {
     column-rule: 5px solid rgb(150, 150, 150, 0.250);
 }
 
-.aboutus {
-    text-align: center;
-    line-height: 250%;
-}
-
-.noUnderline {
+.link {
     text-decoration: none;
 }
 
@@ -195,6 +177,8 @@ button, .form {
     z-index: 9999999;
     right: 0px;
     left: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 527px) {
@@ -209,4 +193,25 @@ button, .form {
         height: 75px;
         width: 75px;
     }
+}
+
+/* Modificaciones en bootstrap */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
 }

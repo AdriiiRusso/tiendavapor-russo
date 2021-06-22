@@ -1,35 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Vapor - KITS</title>
+    <title>Tienda Vapor - Kits</title>
+    <!-- Bootstrap v5.0.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Estilos propios -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Fuente Ubuntu -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <iframe src="./header.html" frameborder="0" class="cabeza"></iframe>
-    <iframe src="./menu.html" frameborder="0" class="menu"></iframe>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light cabeza">
+        <div class="container-fluid">
+            <div class="logoContainer">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="" width="300" height="90" class="logo">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuario</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">Panel de control</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Cerrar sesión</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><b>Administración</b></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Carrito de compras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./help.html">Ayuda</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                </form>
+          </div>
+        </div>
+    </nav>
+    <div style="height: 75px;"></div>
+    <!-- FIN Navbar -->
+    <!-- Menu -->
+    <div class="fondo menu">
+        <h2 class="titulo"><b>CATEGORÍAS</b></h2>
+        <div class="menuInside">
+            <p><a href="./eliquids.html" target="_parent"><button class="buttonMenu">E-Liquids</button></a></p>
+            <p><a href="./mods.html" target="_parent"><button class="buttonMenu">Mods</button></a></p>
+            <p><a href="./atomizadores.html" target="_parent"><button class="buttonMenu">Atomizadores</button></a></p>
+            <p><a href="./kits.html" target="_parent"><button class="buttonMenu">Kits</button></a></p>
+            <p><a href="./insumos.html" target="_parent"><button class="buttonMenu">Insumos</button></a></p>
+            <p><a href="./accesorios.html" target="_parent"><button class="buttonMenu">Accesorios</button></a></p>
+        </div>
+    </div>
+    <!-- FIN Menu-->
+    <br>
+    <!-- Kits -->
     <div class="center">
-        <h3>Kits</h3>
-        <table border="1" class='center'>
-            <tr>
-                <th>Marca</th>
-                <th>Potencia</th>
-                <th>Tipo</th>
-                <th>Batería</th>
-                <th>Precio</th>
-                <th>Agregar al carrito</th>
-            </tr>
+        <h3 class="titulo"><b>Kits</b></h3>
+        <table class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Marca</th>
+                    <th>Potencia</th>
+                    <th>Tipo</th>
+                    <th>Batería</th>
+                    <th>Precio</th>
+                    <th>Agregar al carrito</th>
+                </tr>
+            </thead>
             <tr>
                 <td>Marca 1</td>
                 <td>Potencia 1</td>
                 <td>Tipo 1</td>
                 <td>Batería 1</td>
                 <td>Precio 1</td>
-                <td style="text-align: center;"><a href="./checkout.html">Agregar</a></td>
+                <td style="text-align: center;"><a href="#">Agregar</a></td>
             </tr>
             <tr>
                 <td>Marca 2</td>
@@ -37,7 +107,7 @@
                 <td>Tipo 2</td>
                 <td>Batería 2</td>
                 <td>Precio 2</td>
-                <td style="text-align: center;"><a href="./checkout.html">Agregar</a></td>
+                <td style="text-align: center;"><a href="#">Agregar</a></td>
             </tr>
             <tr>
                 <td>Marca ...</td>
@@ -45,7 +115,7 @@
                 <td>Tipo ...</td>
                 <td>Batería ...</td>
                 <td>Precio ...</td>
-                <td style="text-align: center;"><a href="./checkout.html">Agregar</a></td>
+                <td style="text-align: center;"><a href="#">Agregar</a></td>
             </tr>
             <tr>
                 <td>Marca N</td>
@@ -53,7 +123,7 @@
                 <td>Tipo N</td>
                 <td>Batería N</td>
                 <td>Precio N</td>
-                <td style="text-align: center;"><a href="./checkout.html">Agregar</a></td>
+                <td style="text-align: center;"><a href="#">Agregar</a></td>
             </tr>
         </table>
         <br>
@@ -62,11 +132,44 @@
             Página 1 de N
             <button>Siguiente ></button>
         </nav>
+        <br>
     </div>
+    <!-- FIN Kits -->
+    </br>
+    <!-- Carrito -->
+    <div class="container fondo carrito">
+        <h3 class="titulo"><b>CARRITO DE COMPRAS</b></h3>
+        <ul class="list-group">
+            <li class="list-group-item">Producto seleccionado 1</li>
+            <li class="list-group-item">Producto seleccionado 2</li>
+            <li class="list-group-item">Producto seleccionado 3</li>
+            <li class="list-group-item">Producto seleccionado 4</li>
+            <li class="list-group-item">Producto seleccionado 5</li>
+            <li class="list-group-item">Producto seleccionado 6</li>
+            <li class="list-group-item">Producto seleccionado ...</li>
+            <li class="list-group-item">Producto seleccionado N</li>
+        </ol>
+        </br>
+        <a href="#" target="_parent"><button>Realizar pedido</button></a>
+        </br>
+    </div>
+    <!-- FIN Carrito -->
     <br>
-    <iframe src="./checkout.html" frameborder="0" class="checkout"></iframe>
-    <br>
-    <iframe src="./footer.html" frameborder="0"></iframe>
-    <a href="http://example.com"><img src="./images/wpp.png" width="100" height="100" class="whatsapp"></a>
+    <!-- Footer -->
+    <footer class="fondo">
+        <div class="pie"></br></div>
+            <p style="font-weight: bold; text-align: center; padding-top: 15px;">Tienda Vapor - Adrián Russo 2021
+                    ><a href="./aboutus.html" target="_parent" class="link">Acerca de nosotros</a>
+                    ><a href="./index.html" target="_parent" class="link">Instagram</a>
+                    ><a href="./index.html" target="_parent" class="link">Facebook</a>
+            </p>
+        <div class="pie"></br></div>
+    </footer>
+    <!-- FIN Footer-->
+    <!-- Whatsapp-->
+    <a href="#">
+        <img src="./images/wpp.png" width="100" height="100" class="whatsapp">
+    </a>
+    <!-- FIN Whatsapp-->
 </body>
 </html>
