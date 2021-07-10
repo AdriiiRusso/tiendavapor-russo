@@ -1,8 +1,14 @@
+$colorFondo: rgb(150, 150, 150, 0.250);
+$tipoFuente: 'Ubuntu', sans-serif;
+@mixin margen($tamanio){
+margin: $tamanio;
+}
+
 body {
     background-color: rgb(240, 240, 240);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $tipoFuente;
     font-size: large;
-    margin: 0px;
+    @include margen(0px);
 }
 
 @keyframes logo {
@@ -29,7 +35,7 @@ body {
 }
 
 .fondo {
-    background-color: rgb(150, 150, 150, 0.250);
+    background-color: $colorFondo;
 }
 
 .titulo {
@@ -107,16 +113,16 @@ body {
 
 .pie {
     text-align: center;
-    background-color: rgb(150, 150, 150, 0.250);
+    background-color: $colorFondo;
     background-image: url("../images/logo.png");
     background-size: contain;
 }
 
 .center {
     text-align: center;
-    margin: auto;
+    @include margen('auto');
     width: 75%;
-    border: 5px solid rgb(150, 150, 150, 0.250);
+    border: 5px solid $colorFondo;
     padding: 5px;
 }
 
@@ -129,7 +135,7 @@ body {
 .twocolumns {
     column-count: 2;
     column-gap: 40px;
-    column-rule: 5px solid rgb(150, 150, 150, 0.250);
+    column-rule: 5px solid $colorFondo;
 }
 
 .link {
@@ -143,7 +149,7 @@ h3 {
 button, .form {
     border-radius: 10px;
     outline: none;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $tipoFuente;
     font-size: 18px;
 }
 
