@@ -50,9 +50,15 @@ body {
     .cabeza {
         height: 275px;
     }
+    .menu {
+        display: none;
+    }
 }
 
-@media (max-width: 527px) {
+@media (min-width: 527px) and (max-width: 1024px) {
+    .cabeza {
+        height: 275px;
+    }
     .menu {
         display: none;
     }
