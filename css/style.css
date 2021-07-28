@@ -1,3 +1,5 @@
+
+
 body {
     background-color: rgb(240, 240, 240);
     font-family: 'Ubuntu', sans-serif;
@@ -220,4 +222,55 @@ button, .form {
   content: '<';
   font-size: 55px;
   color: red;
+}
+/* Botones de redes */
+ul.socialIcons {
+    padding: 0;
+    text-align: center;
+}
+  
+  .socialIcons li {
+    list-style: none;
+    display: inline-block;
+    margin: 4px;
+    border-radius: 2em;
+    overflow: hidden;
+}
+  
+  .socialIcons li a {
+    display: block;
+    padding: 0.5em;
+    min-width: 40px;
+    max-width: 1.28571429em;
+    height: 40px;
+    white-space: nowrap;
+    line-height: 1.5em; /*it's working only when you write text with icon*/
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: arial;
+    color: #fff;
+}
+  
+  .socialIcons li i {
+    margin-right: 0.5em;
+}
+  
+  .socialIcons li:hover a {
+    max-width: 200px;
+    padding-right: 1em;
+}
+  
+  .socialIcons .instagram {
+    background-color: magenta;
+    box-shadow: 0 0 16px magenta;
+}
+
+  .socialIcons .facebook {
+    background-color: blue;
+    box-shadow: 0 0 16px blue;
+}
+    
+  .socialIcons .twitter {
+    background-color: cyan;
+    box-shadow: 0 0 16px cyan;
 }
