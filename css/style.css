@@ -48,6 +48,12 @@ body {
     z-index: 999;
 }
 
+.menuInside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 @media (max-width: 527px) {
     .cabeza {
         height: 275px;
@@ -64,12 +70,6 @@ body {
     .menu {
         display: none;
     }
-}
-
-.menuInside {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
 .principal {
@@ -130,7 +130,13 @@ body {
 
 @media (max-width: 527px) {
     .center {
-        margin-top: 125px;
+        margin-top: 25%;
+    }
+}
+
+@media (min-width: 527px) and (max-width: 1024px) {
+    .center {
+        margin-top: 10%;
     }
 }
 
@@ -229,7 +235,7 @@ ul.socialIcons {
     text-align: center;
 }
   
-  .socialIcons li {
+.socialIcons li {
     list-style: none;
     display: inline-block;
     margin: 4px;
@@ -237,40 +243,40 @@ ul.socialIcons {
     overflow: hidden;
 }
   
-  .socialIcons li a {
+.socialIcons li a {
     display: block;
     padding: 0.5em;
     min-width: 40px;
     max-width: 1.28571429em;
     height: 40px;
     white-space: nowrap;
-    line-height: 1.5em; /*it's working only when you write text with icon*/
+    line-height: 1.5em;
     transition: 0.5s;
     text-decoration: none;
     font-family: arial;
     color: #fff;
 }
   
-  .socialIcons li i {
+.socialIcons li i {
     margin-right: 0.5em;
 }
   
-  .socialIcons li:hover a {
+.socialIcons li:hover a {
     max-width: 200px;
     padding-right: 1em;
 }
   
-  .socialIcons .instagram {
+.socialIcons .instagram {
     background-color: magenta;
     box-shadow: 0 0 16px magenta;
 }
 
-  .socialIcons .facebook {
+.socialIcons .facebook {
     background-color: blue;
     box-shadow: 0 0 16px blue;
 }
     
-  .socialIcons .twitter {
+.socialIcons .twitter {
     background-color: cyan;
     box-shadow: 0 0 16px cyan;
 }
